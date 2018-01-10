@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ripple brain wallet generator</title>
+  ${require('./partials/head.html')}
+  <style>
+    ${require('./style.css')}
+  </style>
+</head>
+
+<body>
+  ${require('./partials/header.html')}
+  <main class="main-wrap" role="main">
+    <label for="passphrase">Passphrase</label>
+    <input id="passphrase" class="passphrase" type="text" required />
+
+    <label for="salt">Salt</label>
+    <input id="salt" class="salt" type="text" retuired />
+
+    <button>Generate</button>
+    <p id="timeTaken">Click to generate Ripple wallet address</p>
+
+    <div class="result">
+      <label for="address">Address</label>
+      <input id="address" class="address" placeholder="Generate keypair..." value="" type="text" readonly/>
+
+      <label for="privatekey">Private key</label>
+      <input id="privatekey" class="privatekey" placeholder="Generate keypair..." value="" type="text" readonly/>
+    </div>
+  </main>
+  ${require('./partials/footer.html')}
+</body>
+
+</html>

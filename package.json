@@ -1,0 +1,25 @@
+{
+  "name": "ripple-brain-wallet-generator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "stats": "webpack --profile --json > stats.json",
+    "build": "webpack"
+  },
+  "author": "Mark Bengtsson",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "html-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
+    "ripple-keypairs": "^0.10.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0"
+  }
+}
