@@ -9,7 +9,8 @@ const PATHS = {
 };
 
 const isProduction = process.env.NODE_ENV === 'production';
-const filename = isProduction ? '[name].[hash:8]' : '[name]';
+// const filename = isProduction ? '[name].[hash:8]' : '[name]';
+const filename = '[name]';
 
 const plugins = [
   new webpack.optimize.ModuleConcatenationPlugin(),
@@ -33,7 +34,6 @@ module.exports = {
   plugins: plugins,
   output: {
     path: PATHS.dist,
-    publicPath: '/',
     filename: `${filename}.js`,
   },
   devServer: {
